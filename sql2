@@ -1,0 +1,18 @@
+CREATE TABLE person(id NUMBER, name VARCHAR(20));
+
+INSERT INTO person VALUES (1, 'Anna');
+INSERT INTO person VALUES (3, 'Anton');
+
+
+SELECT * FROM person;
+
+SELECT * FROM person WHERE name = 'Anton';
+
+SELECT name FROM person WHERE name = 'Anton' OR name = 'Anna';
+
+
+INSERT INTO person VALUES (3, 'Anton');
+
+SELECT DISTINCT * FROM person ORDER BY id;
+
+SELECT DISTINCT * FROM person ORDER BY id desc;
